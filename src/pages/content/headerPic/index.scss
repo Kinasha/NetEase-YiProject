@@ -3,4 +3,13 @@
   height: 33vh;
   background-color: #7596c1;
   background-size: cover;
+  padding-top: 50px;
+  div {
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    span+span {
+      margin: auto;
+    }
+  }
 }

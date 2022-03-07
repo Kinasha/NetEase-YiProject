@@ -39,6 +39,7 @@
     ]
   },
   "devDependencies": {
+    "@ant-design/icons": "^4.7.0",
     "node-sass": "^7.0.1"
   }
 }
