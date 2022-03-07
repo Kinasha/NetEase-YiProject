@@ -1,5 +1,5 @@
 import welcomePic from '$images/welcome.png';
-import { Button } from 'antd';
+import RButton from '../../components/button/button';
 function WelcomeHeadr() {
   return (
     <div>
@@ -18,18 +18,7 @@ function Home() {
       <header className="App-header">
         <WelcomeHeadr />
         <img src={welcomePic} alt="pic" />
-        <Button
-          type="primary"
-          shape="round"
-          style={{
-            backgroundColor: '#FF3A3A',
-            width: '200px',
-            height: '48px',
-            fontSize: '18px',
-          }}
-        >
-          <a href="/Content">立即开启</a>
-        </Button>
+        <RButton text="立即开启" href="/Content" />
       </header>
     </div>
   );
