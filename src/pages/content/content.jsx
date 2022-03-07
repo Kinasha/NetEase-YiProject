@@ -1,15 +1,14 @@
 import { useState } from 'react';
-import emptyBox from '$images/empty-box.jpg';
+import Empty from './empty/empty';
+import HeaderPic from './headerPic/headerPic';
+import './index.scss';
 function Content() {
   const [todoList, setTodoList] = useState([]);
   const isEmpty = todoList.length === 0;
   return (
-    <div>
-      {isEmpty ? (
-        <img src={emptyBox} alt="empty-box" />
-      ) : (
-        <h2>this is Content</h2>
-      )}
+    <div className="content">
+      <HeaderPic />
+      {isEmpty ? <Empty /> : <h2>this is Content</h2>}
     </div>
   );
 }
