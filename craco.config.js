@@ -3,6 +3,7 @@ module.exports = {
   webpack: {
     alias: {
       $images: path.resolve(__dirname, 'src/assets/img'),
+      $pages: path.resolve(__dirname, 'src/pages'),
     },
   },
 };
