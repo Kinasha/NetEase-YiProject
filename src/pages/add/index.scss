@@ -1,0 +1,28 @@
+.add {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.02);
+  .headerPic {
+    background-image: url('$images/header-background.png');
+    height: 33vh;
+    background-color: #7596c1;
+    background-size: cover;
+    padding-top: 10px;
+  }
+  div.headerTop {
+    line-height: 28px;
+    display: flex;
+    :first-child {
+      position: absolute;
+      float: left;
+      z-index: 1;
+    }
+    span + span {
+      margin: auto;
+    }
+  }
+}
+.ant-input {
+  height: 350px;
+  background-color: transparent;
+}

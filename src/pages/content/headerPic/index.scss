@@ -3,12 +3,16 @@
   height: 33vh;
   background-color: #7596c1;
   background-size: cover;
-  padding-top: 50px;
-  div {
+  padding-top: 10px;
+  div.headerTop {
     line-height: 28px;
     display: flex;
-    align-items: center;
-    span+span {
+    :first-child {
+      position: absolute;
+      float: left;
+      z-index: 1;
+    }
+    span + span {
       margin: auto;
     }
   }

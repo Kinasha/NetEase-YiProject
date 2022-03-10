@@ -9,6 +9,7 @@ function Empty() {
       <RButton
         text="写下你的愿望"
         style={{ width: '188px', height: '40px', fontSize: '16px' }}
+        href="Add"
       />
     </div>
   );
