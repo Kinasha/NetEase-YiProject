@@ -17,7 +17,7 @@ export function Add() {
           </span>
           <span
             style={{ fontSize: '18px' }}
-            onClick={() => console.log(todoContent)}
+            onClick={addTodo.bind(todoContent)}
           >
             确定
           </span>
@@ -34,4 +34,8 @@ export function Add() {
       </div>
     </div>
   );
+}
+function addTodo(text) {
+  window.localStorage.setItem('todo', text.toString());
+  console.log(window.localStorage.getItem('todo'));
 }
